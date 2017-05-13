@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\wamp\www\ArmSingleAlarmIndexedDBRelease\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="67f13d08cfbba5fe2eaf319203b1fe6955ba388f">
+        <dex dex="C:\wamp\www\ArmSingleAlarmIndexedDBRelease\platforms\android\build\intermediates\pre-dexed\release\CordovaLib-unspecified-release_60232b88d0a0af52bba522b14674f1fae1967f5e.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,11 @@
+{
+ "android": {
+     "release": {
+         "keystore": "gil-release-key.keystore",
+         "storePassword": "LiorTal2216",
+         "alias": "releaseKeyGil",
+         "password" : "LiorTal2216",
+         "keystoreType": ""
+     }
+ }
+}

@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+
+.wrap {
+	white-space : normal !important;
+}
+
+.smallUnbold {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.headerButton {
+    float: left;
+    margin-right: 5px!important;
+}
+
+#home_alarm_edit_submit {
+    background-color: #00ff21;
+}
+
+label.error { 
+	color: red; 
+	padding-top: .5em; 
+	vertical-align: top; 
+	font-weight:bold;
+}
+
+
+
+
+.custom-navbar ul li a {
+    background: #c49b54; /* Old browsers */
+    background: linear-gradient( #c49b54,#D6B987 ) repeat scroll 0 0 #67497a !important;
+    background: -moz-linear-gradient( #c49b54,#D6B987 ) repeat scroll 0 0 #67497a !important; /* FF3.6+ */
+    background: -webkit-linear-gradient( #c49b54,#D6B987 ) repeat scroll 0 0 #67497a !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient( #c49b54,#D6B987 ) repeat scroll 0 0 #67497a !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient( #c49b54,#D6B987 ) repeat scroll 0 0 #67497a !important; /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c49b54', endColorstr='#D6B987',GradientType=0 ); /* IE6-9 */
+	border-color: #E5AB2E !important;
+	width: 100% !important;
+	border-radius: 30px !important;
+}
+
+.custom-navbar ul li a.ui-btn-active {
+    background: #c49b54; /* Old browsers */
+    background: linear-gradient( #c49b54,#c49b54 ) repeat scroll 0 0 #67497a !important;
+    background: -moz-linear-gradient( #c49b54,#c49b54 ) repeat scroll 0 0 #67497a !important; /* FF3.6+ */
+    background: -webkit-linear-gradient( #c49b54,#c49b54 ) repeat scroll 0 0 #67497a !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient( #c49b54,#c49b54 ) repeat scroll 0 0 #67497a !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient( #c49b54,#c49b54 ) repeat scroll 0 0 #67497a !important; /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c49b54', endColorstr='#c49b54',GradientType=0 ); /* IE6-9 */
+	border-color: #E5AB2E !important;
+	width: 100% !important;
+	border-radius: 30px !important;
+
+}
+
+.custom-navbar ul li {
+	padding-bottom: 3px !important;
+	padding-top: 3px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+legend {
+    font-size:  1em;
+    font-weight:  bold;
+    position:  relative;
+    top:  -.4em;
+}
+
+/*
+div.ui-flipswitch {
+    position: absolute;
+    right: 30px;
+    width: 100px;
+}
+
+label[for=code_save-slider] {
+    font-weight: bold !important;
+}
+*/
+/**********************************************/
+
+
+
+
+
+
+/*
+#pin {
+    font-size:  2em;
+    font-weight:  bold;
+}
+*/
+/********************************/
+/* Arm and Disarm buttons CSS  */
+.custom-btn {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 40% !important;
+    margin: 0 auto !important;
+    font-size: 20px !important;
+    background-repeat: no-repeat  !important;
+    background-position: center  !important; 
+}
+
+/*
+.custom-btn span span {
+    height: 100px !important;  
+    line-height: 70px;
+}
+*/
+
+#arm_btn {
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+    background-image: url('images/red-alarm-bell.png') !important;
+}
+
+#disarm_btn {
+    background-image: url('images/green-alarm-bell.png') !important;
+}
+
+.custom-btn .ui-btn-inner {
+    padding: 0 !important;    
+}
+
+.custom-btn .ui-btn-inner .ui-btn-text {
+    display: block !important;
+    height: 50px !important;
+    width: 100% !important;
+/*    background-image: url('green-alarm-bell.png') !important; */
+    background-repeat: no-repeat  !important;
+    background-position: center  !important; 
+}
+/* end of Arm and Disarm buttons CSS  */
+/**************************************/
+
+/********************************/
+/* Enter Code numerical pad  */
+#keypad #myInput {
+    background: white; 
+    color: black;
+}
+
+
+#keypad .ui-bar-a {
+    display: none; 
+    -khtml-user-select: none;
+}
+
+/* End of numerical pad  */
+/********************************/
+
+/********************************/
+/* Manage alarms popup  */
+#manageAlarms #homes_list_context_menu ul {
+    min-width:210px;
+}
+
+/* End Manage alarms popup */
+/********************************/

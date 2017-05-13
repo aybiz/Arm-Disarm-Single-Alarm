@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mustard3.min.css" rel="stylesheet"  type="text/css"/>
+        <link href="css/jquery.mobile.icons.min.css" rel="stylesheet"  type="text/css"/>
+        <link href="css/jquery-confirm.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="js/dexie.js" type="text/javascript"></script>
+        <script src="js/jquery-confirm.js" type="text/javascript"></script>  
+        <script src="js/ArmAppDB.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <!-- <script src="js/initializing_tables.js" type="text/javascript"></script> -->
+
+        <title>Arm Alarm</title>
+    </head>
+    <body>
+<!-- ****************************************************** -->
+<!-- ****************************************************** -->
+<!-- ****************************************************** -->
+<!-- ****************************************************** -->
+<!--                     Main page - Menu                   -->
+<!-- ****************************************************** -->
+        
+        <div data-role="page" id="mainPage" >
+            <div data-role="header" data-position="fixed">
+                <a id="exitApp" href="#">Exit</a>
+                <h1 class="wrap">Alarm Control</h1>
+            </div>
+            <div data-role="content">
+                <a data-role="button" id="arm_btn" name="ARM" class="custom-btn">ARM</a>
+                <a data-role="button" id="disarm_btn" name="DISARM" class="custom-btn">DISARM</a>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top" class="custom-navbar">
+                    <ul>
+                        <li><a href="#alarm_settings" data-icon="gear">Settings</a></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- **************************************************** -->
+    <!-- **************************************************** -->
+    <!-- **************************************************** -->
+    <!--                    Enter Alarm Code                  -->
+    <!-- **************************************************** -->
+    <!-- Parent: mainPage >> enterPin                         -->
+
+        <div data-role="page" id="enterPin" >
+            <div data-role="header" data-position="fixed">
+                <a href="#mainPage" data-icon="back">Back</a>
+                <h1 class="wrap">Alarm Control - Enter Code</h1>
+            </div>
+            <div id="keypad" data-role="content">
+                <input type="text" readonly="readonly" id="myInput"/> <!-- style="background: white; color: black;" -->
+                <table class="ui-bar-a" id="n_keypad" ><!-- style="display: none; -khtml-user-select: none;" -->
+                    <tr>
+                <td><a data-role="button" data-theme="b" class="numero">7</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">8</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">9</a></td>
+                        <td><a data-role="button" data-theme="e" class="del">Del</a></td>
+                    </tr>
+                    <tr>
+                        <td><a data-role="button" data-theme="b" class="numero">4</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">5</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">6</a></td>
+                        <td><a data-role="button" data-theme="e" class="clear">Clear</a></td>
+                    </tr>
+                    <tr>
+                        <td><a data-role="button" data-theme="b" class="numero">1</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">2</a></td>
+                        <td><a data-role="button" data-theme="b" class="numero">3</a></td>
+                        <!-- <td><a data-role="button" data-theme="e">&nbsp;</a></td> -->
+                        <td><a data-role="button" data-theme="e" class="done">Send</a></td>
+                    </tr>
+                    <tr>
+                       <!-- <td><a data-role="button" data-theme="e" class="neg"></a></td> -->
+                        <td>&nbsp;</td>
+                        <td><a data-role="button" data-theme="b" class="zero">0</a></td>
+                        <!-- <td><a data-role="button" data-theme="e" class="pos"></a></td> -->
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+            </div>
+        </div>
+
+    <!-- **************************************************** -->
+
+
+
+
+    <!-- ****************************************************************************************** -->
+    <!-- ****************************************************************************************** -->
+    <!-- ****************************************************************************************** -->
+    <!--                       SETTINGS                                                             -->
+    <!-- ****************************************************************************************** -->
+    <!-- Parent: mainPage - settings button                    -->
+
+        <div data-role="page" id="alarm_settings">
+            <div data-role="header" data-position="fixed">
+                <a href="#mainPage" data-icon="back">Back</a></a>
+                <h1 class="wrap">Settings</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="fieldcontain">
+                        <form>
+                            <fieldset data-role="controlgroup" data-type="horizontal">
+                                <legend>Wait for Alarm Status Confirmation?</legend>
+                                <input type="radio" name="expect_alarm_confirm_radio" id="expect_alarm_confirm_yes" value="yes" >
+                                <label for="expect_alarm_confirm_yes">Yes</label>
+                                <input type="radio" name="expect_alarm_confirm_radio" id="expect_alarm_confirm_no" value="no" checked="checked">
+                                <label for="expect_alarm_confirm_no">No</label>
+                            </fieldset>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h4>Page Footer</h4>
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

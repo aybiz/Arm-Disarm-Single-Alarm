@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\wamp\\www\\ArmAlarmIndexedDBRelease\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\config.xml",
+        "source": "C:\\wamp\\www\\ArmAlarmIndexedDBRelease\\platforms\\android\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\wamp\\www\\ArmSingleAlarmIndexedDBRelease\\platforms\\android\\build\\intermediates\\res\\merged\\release\\xml\\config.xml",
+        "source": "C:\\wamp\\www\\ArmSingleAlarmIndexedDBRelease\\platforms\\android\\res\\xml\\config.xml"
+    }
+]

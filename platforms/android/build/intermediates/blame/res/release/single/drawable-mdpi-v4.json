@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\wamp\\www\\ArmAlarmIndexedDBRelease\\platforms\\android\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\icon.png",
+        "source": "C:\\wamp\\www\\ArmAlarmIndexedDBRelease\\platforms\\android\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\wamp\\www\\ArmSingleAlarmIndexedDBRelease\\platforms\\android\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\icon.png",
+        "source": "C:\\wamp\\www\\ArmSingleAlarmIndexedDBRelease\\platforms\\android\\res\\drawable-mdpi\\icon.png"
+    }
+]

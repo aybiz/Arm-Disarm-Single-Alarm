@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.gilg.armalarm"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.gilg.armalarm"
+        },
+        "cordova-plugin-sms": {
+            "PACKAGE_NAME": "com.gilg.armalarm"
+        },
+        "cordova-plugin-spinnerdialog": {
+            "PACKAGE_NAME": "com.gilg.armalarm"
+        },
+        "cordova-plugin-android-permissions": {
+            "PACKAGE_NAME": "com.gilg.armalarm"
+        }
+    },
+    "dependent_plugins": {}
+}
